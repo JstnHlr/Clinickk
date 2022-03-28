@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    color: #EAF1F5;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: #EAF1F5;
+    font-weight: 500;
+}
+
+h2 {
+    line-height: 1.2;
+    margin: 50px 0 ;
+    font-size: 40px;
+    text-align: left;
+    font-weight: 500;
+}
+a {
+    color: #2D5F74;
+}
+
+a:hover {
+    color: #00b3ff;
+}
+
+p {
+    color: #171717;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    height: 150px;
+    background-color: #2D5F74;
+}
+
+.left , .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left .header {
+    color: #EAF1F5;
+    text-align: center;
+}
+
+.right .header {
+    color: #2D5F74;
+    text-align: center;
+}
+
+.right p {
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.right form {
+    width: 350px;
+}
+
+label {
+    color: #171717af;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    color: #171717;
+    display: block;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #171717af;
+    margin-bottom: 40px;
+    font-size: 16px;
+    outline: none;
+    line-height: 2.8;
+}
+
+.login { 
+    margin-top: 35px;
+    display: block;
+    width: 100%;
+    background-color: #2D5F74;
+    color: #EAF1F5;
+    font-weight: 400;
+    padding: 15px;
+    border: none;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.login:hover {
+    background-color: #0c5d80;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.input-container {
+    line-height: 1;
+}
+
+.input-container-socialmedia .facebook { 
+    margin-left: 200px;
+    display: block;
+    width: 50%;
+    background-color: #eaf1f500;
+    border: 1px solid #4267B2;
+    color: #2D5F74;
+    font-weight: 400;
+    padding: 16px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.input-container-socialmedia .google { 
+    margin-left: 200px;
+    display: block;
+    width: 50%;
+    background-color: #2D5F74;
+    color: #EAF1F5;
+    font-weight: 400;
+    padding: 16px;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.input-container-socialmedia .facebook:hover {
+    background-color: #4267B2;
+    border: 1px solid #4267B2;
+    color: #EAF1F5;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.input-container-socialmedia .google:hover {
+    background-color: #34a353;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 950px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    
+    .right h2 {
+        font-size: 55px;
+    }
+
+    .right form {
+        width: 450px;
+    }
+
+    .left {
+        width: 65%;
+    }
+
+    .right {
+        width: 35%
+    }
+
+    .left,
+    .right {
+        display: flex;
+        height: auto;
+    }
+
+    .input-container {
+        line-height: 2;
+    }
+
+    .login {
+        width: 35%;
+        padding: 20px;
+    }
+
+    .input-container-socialmedia .facebook {
+        margin-left: 260px;
+        padding: 20px;
+        width: 45%;
+    }
+
+    .input-container-socialmedia .google {
+        margin-left: 260px;
+        padding: 20px;
+        width: 45%;
+    }
+    /* Register */
+    #input-container {
+        line-height: .7;
+    }
+    form {
+        margin-bottom: 50px;
+    }
+}

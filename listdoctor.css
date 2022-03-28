@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAF1F5;
+}
+
+nav {
+    margin-top: 30px;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #2D5F74;
+    font-size: 48px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: 500;
+}
+
+nav ul {
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #171717;
+    font-size: 22px;
+    padding: 7px 13px;
+    font-weight: 500;
+}
+
+.logout {
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: #2D5F74;
+    color: #EAF1F5;
+    padding: 5px 20px;
+    margin-right: 200px;
+}
+
+.logout:hover {
+    background-color: #0c5d80;
+    transition: 0.4s;
+}
+
+.active, a:hover {
+    color: #2D5F74;
+    transition: 0.2s;
+}
+
+.checkbtn {
+    font-size: 40px;
+    color: #171717;
+    line-height: 80px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #2D5F74;
+    margin-bottom: 50px;
+}
+
+h1 {
+    position: relative;
+    left: 470px;
+    top: 100px;
+}
+
+table {
+    margin-top: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-collapse: collapse;
+    box-shadow: 0 8px 30px #dae1e2;
+    text-align: left;
+    overflow: hidden;
+    height: 450px;
+}
+
+thead {
+    box-shadow: 0 1px 50px #8ecfdabf;
+}
+
+th {
+    color: #EAF1F5 ;
+    background-color: #2D5F74;
+    padding: 25px 35px;
+    letter-spacing: 1.6px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+td {
+    padding: 25px 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #2D5F74;
+}
+
+.doctor-name:hover {
+    color: #3EB3BB;
+}
+
+.get-app {
+    border: none;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #2D5F74;
+    border: 1px solid rgba(0, 0, 0, 0.152);
+    border-radius: 2px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.get-app:hover {
+    transition: .2s;
+    color: #EAF1F5;
+    border: 1px solid #2D5F74;
+    background-color: #2D5F74;
+}
+
+@media (max-width: 952px) {
+    .logo {
+        font-size: 40px;
+        padding-left: 20px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    h1 {
+        position: relative;
+        left: 30px;
+    }
+    .logout {
+        font-size: 15px;
+        padding: 8px 30px;
+        border-radius: 3px;
+        margin-left: 20px;
+        background-color: #2d5f746e;
+        margin-top: 3px;
+    }
+        .logout:hover {
+            background-color: #3EB3BB;
+        }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2D5F74;
+        top: 130px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li  a {
+        color: #EAF1F5;
+        font-size: 20px;
+    }
+    a:hover, .active {
+        background: none;
+        color: #3EB3BB;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
